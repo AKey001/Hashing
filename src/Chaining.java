@@ -89,7 +89,7 @@ public class Chaining {
     public static class Key {
         private String value;
 
-        public Key(String value) throws Exception {
+        public Key(String value) {
             this.value = value;
         }
 
@@ -99,7 +99,7 @@ public class Chaining {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Dictionary dictionary = new Dictionary();
 
         Key a = new Key("a");
