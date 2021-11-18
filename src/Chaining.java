@@ -55,10 +55,10 @@ public class Chaining {
 
     private static int m = 1000;
 
-    public static class Dictionary {
+    public static class Hashtable {
         private SinglyLinkedList[] table;
 
-        public Dictionary() {
+        public Hashtable() {
             this.table = new SinglyLinkedList[m];
             for (int i = 0; i < table.length; i++) {
                 table[i] = new SinglyLinkedList();
@@ -100,19 +100,19 @@ public class Chaining {
     }
 
     public static void main(String[] args) {
-        Dictionary dictionary = new Dictionary();
+        Hashtable hashtable = new Hashtable();
 
         Key a = new Key("a");
         Key b = new Key("b");
         Key c = new Key("c");
 
-        dictionary.insert(a, "Hashing");
-        dictionary.insert(b, "Chaining");
-        dictionary.insert(c, "with");
+        hashtable.insert(a, "Hashing");
+        hashtable.insert(b, "Chaining");
+        hashtable.insert(c, "with");
 
-        System.out.println(dictionary.get(a));
-        System.out.println(dictionary.get(c));
-        System.out.println(dictionary.get(b));
+        System.out.println(hashtable.get(a));
+        System.out.println(hashtable.get(c));
+        System.out.println(hashtable.get(b));
     }
 
 
