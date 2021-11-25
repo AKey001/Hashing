@@ -51,6 +51,14 @@ public class Chaining {
             }
         }
 
+        public void add(Object[] value) {
+            Node newNode = new Node();
+            newNode.value = value;
+            newNode.next = this.head;
+            this.head = newNode;
+            this.length += 1;
+        }
+
     }
 
     private static int m = 1000;
@@ -70,7 +78,7 @@ public class Chaining {
         }
 
         public void insert(Key key, String value) {
-            this.table[hash(key)].add(new Object[]{key, value}, null);
+            this.table[hash(key)].add(new Object[]{key, value});
         }
 
         public Object get(Key key) {
