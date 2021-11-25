@@ -113,6 +113,7 @@ public class Chaining {
         Key a = new Key("a");
         Key b = new Key("b");
         Key c = new Key("c");
+        Key d = new Key("b");
 
         hashtable.insert(a, "Hashing");
         hashtable.insert(b, "Chaining");
@@ -121,6 +122,13 @@ public class Chaining {
         System.out.println(hashtable.get(a));
         System.out.println(hashtable.get(c));
         System.out.println(hashtable.get(b));
+
+        hashtable.insert(d, "!");
+
+        System.out.println(hashtable.get(a));
+        System.out.println(hashtable.get(c));
+        System.out.println(hashtable.get(b));
+        System.out.println(hashtable.get(d));
     }
 
 

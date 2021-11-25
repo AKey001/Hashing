@@ -46,6 +46,7 @@ public class DirectAccess {
         Key a = new Key(56);
         Key b = new Key(234);
         Key c = new Key(983);
+        Key d = new Key(234);
 
         dictionary.insert(a, "Hello");
         dictionary.insert(b, "!");
@@ -54,6 +55,13 @@ public class DirectAccess {
         System.out.println(dictionary.get(a));
         System.out.println(dictionary.get(c));
         System.out.println(dictionary.get(b));
+
+        dictionary.insert(d, ".");
+
+        System.out.println(dictionary.get(a));
+        System.out.println(dictionary.get(c));
+        System.out.println(dictionary.get(b));
+        System.out.println(dictionary.get(d));
 
         dictionary.remove(b);
         System.out.println(dictionary.get(b));
