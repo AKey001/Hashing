@@ -1,4 +1,4 @@
-
+// Quelle: https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
 
 public class RabinKarp {
     public final static int b = 256;
